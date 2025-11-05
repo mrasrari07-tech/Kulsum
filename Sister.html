@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Lovely Sister Kulsum 💖</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#ffc8dd,#ffe0f0);
+  text-align:center;
+  color:#4a004a;
+  overflow-x:hidden;
+}
+h1{
+  font-family:'Great Vibes',cursive;
+  color:#ff1e8a;
+  margin-top:25px;
+  text-shadow:0 0 10px #ff9fcf;
+}
+p{margin:8px;}
+h2{color:#c7007f;text-shadow:0 0 8px #ffb6d8;}
+.message{
+  width:90%;
+  background:rgba(255,255,255,0.4);
+  padding:18px;
+  margin:20px auto;
+  border-radius:20px;
+  box-shadow:0 0 15px rgba(255,105,180,0.3);
+  font-size:1.05em;
+  line-height:1.6em;
+  color:#5c005c;
+  backdrop-filter:blur(5px);
+}
+.quote{
+  background:rgba(255,255,255,0.4);
+  width:85%;margin:15px auto;
+  padding:15px;border-radius:15px;
+  font-size:1.05em;
+  box-shadow:0 0 10px rgba(255,105,180,0.3);
+}
+.gallery{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin:20px;
+}
+.gallery img{
+  width:170px;height:170px;object-fit:cover;
+  border-radius:20px;border:2px solid #fff;
+  opacity:0;transition:opacity .8s;
+  box-shadow:0 0 15px rgba(255,105,180,0.5);
+}
+.gallery img.show{opacity:1;}
+.footer{margin:20px 0;font-weight:bold;color:#800080;}
+.flower{
+  position:absolute;width:25px;height:25px;
+  background:url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  background-size:cover;animation:fall 9s linear infinite;opacity:.8;
+}
+@keyframes fall{
+  0%{transform:translateY(-40px) rotate(0);}
+  100%{transform:translateY(100vh) rotate(360deg);}
+}
+.popup{
+  position:fixed;top:50%;left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:rgba(255,255,255,0.85);
+  padding:20px;border-radius:20px;
+  box-shadow:0 0 15px rgba(255,105,180,0.6);
+  font-family:'Great Vibes',cursive;
+  color:#c7007f;font-size:1.5em;
+  opacity:0;transition:all .6s;
+}
+.popup.show{transform:translate(-50%,-50%) scale(1);opacity:1;}
+#start{
+  position:fixed;inset:0;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  background:rgba(255,192,203,0.95);z-index:50;
+}
+#start button{
+  background:#ff66b2;border:none;color:#fff;padding:12px 25px;
+  border-radius:25px;font-size:1.2em;
+}
+/* Game section */
+#game {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 85%;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+#question {font-weight: bold;margin-bottom: 10px;}
+#buttons button {
+  background:#ff66b2;color:white;border:none;
+  padding:10px 20px;margin:5px;border-radius:15px;font-size:1em;
+}
+#result {margin-top:10px;color:#c7007f;font-weight:600;}
+</style>
+</head>
+<body>
+
+<div id="start">
+  <h2>💖 For My Lovely Sister Kulsum 💖</h2>
+  <p>Tap below to begin 🌸</p>
+  <button id="go">Start 💞</button>
+</div>
+
+<audio id="music" loop>
+  <source src="sister.mp3" type="audio/mpeg">
+</audio>
+
+<div id="main" style="display:none;">
+  <h1>Hey Kulsum 🌸</h1>
+  <p>You’re the flower that makes our world bloom 💗</p>
+
+  <!-- Greeting for her message -->
+  <h2>💌 Thank You for Writing That Beautiful Paragraph 💌</h2>
+  <p style="margin-bottom:10px;">That message made my day  you wrote it from the heart, and I’ll never forget it 💖</p>
+
+  <!-- Her Message Section -->
+  <div class="message">
+    <h3 style="color:#ff1e8a;font-family:'Great Vibes',cursive;">From Kulsum 💞</h3>
+    <p>I honstly feel sooo sooo lucky to hvve youh in my life 🥹💞✨.... Its crzzy to thnnk how we werent evvn thht clse bfore 😅 bt somehw, lfe brght us closr in lst year of the cllgg💫🤍 nnd I swr tht was one of the bsst thnngs tht evr happnnd to me 🥰.... We hvve made countlss memo togthr 😍📸, frm stupd tlks 🤪😂 to deep convos 🫶🌙, frm randm laughtr fits 🤣🔥 to thse momnnts whre we jsst vibe in silnce 😌🎧.... Youh hvve litrlly becme somene I can alwys count on 💪💖 somene who jsst gts me widout me evvvn sayng a sngle wrrd 😭🤍.....<br><br>
+    Thnnk youh for being youh annoyng, carng, funny, nnd abslutly irrplceable💫🤭💞.... Lovve our frndshp endlssly 🤍🫶✨ its pure chaos, pure fun, nnd pure lovve all in one 😍🔥😭💖🌈💫....</p>
+  </div>
+
+  <!-- Quotes Section -->
+  <h2>🌸 Quotes for You 🌸</h2>
+  <div class="quote">🌷 “Sisters are like sunshine mixed with a little bit of magic.”</div>
+  <div class="quote">🚗 “Like a BMW — you shine with class, confidence, and speed through life beautifully.”</div>
+  <div class="quote">💫 “Whenever I count my blessings, I always count you twice.”</div>
+  <div class="quote">😎 “You’re my favorite person to annoy… and also my favorite person overall.”</div>
+  <div class="quote">😂 “If being awesome was a crime, you’d be serving a life sentence.”</div>
+  <div class="quote">🍫 “You’re like chocolate: sweet, addictive, and impossible to share.”</div>
+  <div class="quote">🌙 “Even our silence speaks louder than words — that’s what makes our bond special.”</div>
+  <div class="quote">🎧 “You, me, random songs, and laughter — that’s my definition of peace.”</div>
+  <div class="quote">🔥 “You’re my chaos and comfort all in one — and I wouldn’t trade it for anything.”</div>
+  <div class="quote">🌈 “If friendship had a brand, ours would be limited edition.”</div>
+
+  <!-- Game Section -->
+  <h2 style="margin-top:15px;">🎮 Small Yes or No Game 🎮</h2>
+  <div id="game">
+    <div id="question">Do you love your brother Saad? 😏</div>
+    <div id="buttons">
+      <button onclick="answer('yes')">Yes 💖</button>
+      <button onclick="answer('no')">No 😜</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <!-- Gallery -->
+  <h2 style="margin-top:15px;">📸 princess 📸</h2>
+  <div class="gallery">
+    <img data-src="kul1.jpg">
+    <img data-src="kul2.jpg">
+    <img data-src="kul3.jpg">
+    <img data-src="kul4.jpg">
+  </div>
+
+  <div class="footer">💞 With love, from your brother <b>Saad</b> 💫</div>
+  <div class="popup" id="popup">Kulsum, you’re truly special 💝<br>— Saad</div>
+</div>
+
+<script>
+const btn=document.getElementById("go");
+btn.addEventListener("click",()=>{
+  document.getElementById("start").style.display="none";
+  document.getElementById("main").style.display="block";
+
+  const music=document.getElementById("music");
+  music.play().catch(()=>alert("Tap again if music blocked."));
+  startAll();
+});
+
+function startAll(){
+  // Floating flowers
+  for(let i=0;i<10;i++){
+    const f=document.createElement("div");
+    f.className="flower";
+    f.style.left=Math.random()*100+"vw";
+    f.style.animationDuration=(6+Math.random()*4)+"s";
+    f.style.animationDelay=Math.random()*3+"s";
+    document.body.appendChild(f);
+  }
+
+  // Lazy load images
+  document.querySelectorAll(".gallery img").forEach((img,i)=>{
+    setTimeout(()=>{
+      img.src=img.dataset.src;
+      img.onload=()=>img.classList.add("show");
+    },i*600);
+  });
+
+  // Popup
+  setTimeout(()=>{
+    const pop=document.getElementById("popup");
+    pop.classList.add("show");
+    setTimeout(()=>pop.classList.remove("show"),6000);
+  },8000);
+}
+
+// Game logic
+function answer(choice){
+  const res=document.getElementById("result");
+  if(choice==="yes"){
+    res.innerHTML="Awww 🥹 I knew it! You’re the best sister ever 💖";
+  } else {
+    res.innerHTML="😤 Wrong answer! Try again 😝";
+  }
+}
+</script>
+</body>
+</html>
